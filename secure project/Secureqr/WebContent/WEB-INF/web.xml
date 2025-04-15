@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Secureqr</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+<servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EncryptionServlet</servlet-name>
+    <servlet-class>EncryptionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EncryptionServlet</servlet-name>
+    <url-pattern>/EncryptionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DecryptionServlet</servlet-name>
+    <servlet-class>DecryptionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DecryptionServlet</servlet-name>
+    <url-pattern>/DecryptionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EncryptQRServlet</servlet-name>
+    <servlet-class>EncryptQRServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EncryptQRServlet</servlet-name>
+    <url-pattern>/EncryptQRServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DecryptQRServlet</servlet-name>
+    <servlet-class>DecryptQRServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DecryptQRServlet</servlet-name>
+    <url-pattern>/DecryptQRServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
+  
